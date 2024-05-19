@@ -1,0 +1,29 @@
+.footer_logo {
+    font-size: 14px;
+    color: white;
+}
+
+.links_wrapper {
+    color: white;
+    text-transform: capitalize;
+    font-size: 14px;
+    display: flex;
+    padding-left: 0;
+}
+
+.left_column {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+.links_wrapper li:nth-child(2),
+.links_wrapper li:nth-child(3) {
+    margin-left: 10px;
+}
+
+.cutom_footer {
+    padding-top: 15px !important;
+    padding-bottom: 5px !important;
+    background-color: rgb(12, 12, 12);
+}
