@@ -24,9 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
-        <Container>{children}</Container>
-        <Footer />
+        <div className="container-fluid global-layout-margin">
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

@@ -6,6 +6,8 @@ import Image from "next/image";
 import Styles from './Home.module.css';
 import { Card, Button, Col, Row } from "react-bootstrap";
 
+import HomeCards from "./components/home/cards";
+
 
 export default function Home() {
   return (
@@ -19,26 +21,9 @@ export default function Home() {
               work in the UK</h2>
             <Button className={Styles.get_resume}>Get Resume</Button>
           </Col>
-          <Col sm={6}>
-            {/* div card */}
-            <Card style={{ width: '18rem' }}>
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                
-                <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                
-                {/* <Image src={dummyBg} alt="picture of the project"></Image> */}
-            
-                <Card.Text>
-                  Some quick example text to build on the card title and make up the
-                  bulk of the card's content.
-                </Card.Text>
-                
-                {/* <Card.Link href="#">Card Link</Card.Link>
-                <Card.Link href="#">Another Link</Card.Link> */}
-              </Card.Body>
-            </Card>
 
+          <Col sm={6}>
+            <HomeCards /> 
           </Col>
         </Row>
       </header>

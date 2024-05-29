@@ -36,3 +36,8 @@ body {
     text-wrap: balance;
   }
 }
+
+.global-layout-margin {
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+}
