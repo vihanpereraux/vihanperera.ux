@@ -1,0 +1,54 @@
+.project_card {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card_1 {
+    width: 85%;
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+}
+
+.card_2 {
+    width: 95%;
+}
+
+.card_3 {
+    width: 90%;
+}
+
+.second_row {
+    margin-top: 20px;
+}
+
+
+.done_icon {
+    width: 8px;
+    height: 8px;
+    background: #80F822;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.ongoing_icon {
+    width: 8px;
+    height: 8px;
+    background: #ffaa0c;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.tech_stack {
+    display: flex;
+}
+
+.tech_stack img:first-child {
+    margin-left: 0px;
+}
+
+.tech_stack img {
+    margin-left: 8px;
+}
