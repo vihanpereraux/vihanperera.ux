@@ -1,6 +1,8 @@
 .project_card {
+    background-color: #191919;
     width: 100%;
     border-radius: 12px;
+    border: 1px solid #4b4b4b5c;
 }
 
 .card_1 {
@@ -19,9 +21,8 @@
 }
 
 .second_row {
-    margin-top: 20px;
+    margin-top: 40px;
 }
-
 
 .done_icon {
     width: 8px;

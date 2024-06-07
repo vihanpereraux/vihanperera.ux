@@ -8,8 +8,9 @@
 
 .heading {
     color: white;
-    width: 70%;
+    width: 75%;
     line-height: 1.3;
+    font-weight: 400;
 }
 
 .get_resume {

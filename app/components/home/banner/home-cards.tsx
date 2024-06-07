@@ -4,14 +4,14 @@ import Image from "next/image";
 
 import ProjectCard from "./components/project-card";
 
-import Styles from "./homeCards.module.css";
+import Styles from "./home-cards.module.css";
 
 import JavaScriptLogo from "@/public/home/tech-stack/js-logo.png";
 import ComfyUILogo from "@/public/home/tech-stack/comfy-ui-logo.png";
 import ViteLogo from "@/public/home/tech-stack/vite-logo.png";
 import NodeJSLogo from "@/public/home/tech-stack/node-js-logo.png";
 import PythonLogo from "@/public/home/tech-stack/py-logo.png";
-import CardImage from "@/public/home/tech-stack/card-iamge.png";
+import StyledCardImage from "@/public/home/tech-stack/card-iamge.png";
 
 import {
     Card,
@@ -19,6 +19,7 @@ import {
     Col,
     Row
 } from "react-bootstrap";
+import StyledCard from "./components/styled-card";
 
 
 export default function HomeCards() {
@@ -71,40 +72,9 @@ export default function HomeCards() {
                 {/* card 02 */}
                 <Col sm={4} md={4} lg={4} xl={4}>
                     {/* image card */}
-                    <Card style={{
-                        aspectRatio: 1,
-                        width: '80%',
-                        background: 'none',
-                        marginRight: 100,
-                        marginTop: 50,
-                        borderRadius: 12
-                    }}>
-                        <Image style={{
-                            objectFit: 'cover',
-                            width: '100%',
-                            aspectRatio: 1,
-                            borderRadius: 12
-                        }} src={CardImage} alt="" />
-
-                        {/* placeholder */}
-                        <div
-                            style={{
-                                width: '90%',
-                                background: 'none',
-                                position: 'absolute',
-                                transform: 'translateX(-50%)',
-                                left: '50%',
-                                bottom: '5%',
-                                textAlign: 'center',
-                                backdropFilter: 'blur(5px)',
-                                fontSize: 14.5,
-                                paddingTop: 8,
-                                paddingBottom: 10,
-                                borderRadius: 12,
-                                color: 'white'
-                            }}
-                            className="plceholder">Front-end Experiments</div>
-                    </Card>
+                    <StyledCard 
+                        title="Front-end Experiments"
+                        backgroundImage={StyledCardImage}  />
                 </Col>
             </Row>
         </div>);
