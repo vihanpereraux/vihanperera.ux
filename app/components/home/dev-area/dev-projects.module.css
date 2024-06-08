@@ -1,0 +1,101 @@
+.heading {
+    color: white;
+    text-align: center;
+}
+
+.brief {
+    line-height: 1.6;
+    margin-top: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+    color: white;
+}
+
+.project_card_wrapper {
+    margin-top: 20px;
+    background-color: #191919;
+}
+
+.project_title {
+    font-size: 17px;
+    color: white;
+}
+
+.done_icon {
+    width: 8px;
+    height: 8px;
+    background: #80F822;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: doneBlinkAnimation 1.5s linear infinite;
+}
+
+@keyframes doneBlinkAnimation {
+    0% {
+        background: #80F822;
+    }
+
+    100% {
+        background: #80F822;
+    }
+
+    50% {
+        background: #000000;
+    }
+}
+
+.ongoing_icon {
+    width: 8px;
+    height: 8px;
+    background: #ffaa0c;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: ongoingBlinkAnimation 1.5s linear infinite;
+}
+
+@keyframes ongoingBlinkAnimation {
+    0% {
+        background: #ffaa0c;
+    }
+
+    100% {
+        background: #ffaa0c;
+    }
+
+    50% {
+        background: #000000;
+    }
+}
+
+.project_subtitle {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: .7;
+    margin-top: 10px;
+}
+
+.project_image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.project_description {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.tech_stack {
+    display: flex;
+}
+
+.tech_stack img {
+    margin-left: 5px;
+    margin-right: 5px;
+}

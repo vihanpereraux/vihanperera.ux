@@ -2,35 +2,39 @@
 
 import Image from "next/image";
 
-// bootstrap comps
+// bootstrap components
 import Styles from './Home.module.css';
-import { Card, Button, Col, Row } from "react-bootstrap";
 
-import HomeCards from "./components/home/cards";
-
+import HomeCards from "./components/home/banner/home-cards";
+import GitCommitGraph from "./components/home/graph-area/git-commit-graph";
+import MyDevProjects from "./components/home/dev-area/dev-projects";
 
 export default function Home() {
   return (
     <>
       {/* intro section */}
       <header className={Styles.header_wrapper}>
-        <Row>
-          <Col sm={6}>
-            <h2 className={Styles.heading}>
-              A South Asian individual who is leagally allowed to
-              work in the UK</h2>
-            <Button className={Styles.get_resume}>Get Resume</Button>
-          </Col>
-
-          <Col sm={6}>
-            <HomeCards /> 
-          </Col>
-        </Row>
+        <HomeCards />
       </header>
 
+      {/* github commit graph preview */}
+      <GitCommitGraph />
+
       {/* dev intro */}
+      <MyDevProjects
+        sectionTitle="Development"
+        sectionBrief="
+          As a passionate Front-End Developer with a keen interest in the 
+          intersection of creativity and technology, I specialize in crafting 
+          immersive and user-centric digital experiences." />
 
       {/* design intro */}
+      <MyDevProjects
+        sectionTitle="Research"
+        sectionBrief="
+          As a passionate Front-End Developer with a keen interest in the 
+          intersection of creativity and technology, I specialize in crafting 
+          immersive and user-centric digital experiences." />
 
       {/* research intro */}
 

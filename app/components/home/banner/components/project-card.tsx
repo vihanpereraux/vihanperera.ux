@@ -1,14 +1,11 @@
+"use client"
+
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 
-import {
-    Card,
-    Button,
-    Col,
-    Row
-} from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
-import Styles from "../homeCards.module.css";
+import Styles from "../home-cards.module.css";
 
 interface ProjectCardProps {
     projectTitle?: string;
@@ -30,7 +27,7 @@ const ProjectCard: React.FC<ProjectCardProps>
                 <Card className={`${Styles.card_4} ${Styles.project_card} `}>
                     <Card.Body>
                         {/* heading and status icon */}
-                        <table style={{ width: '100%' }}>
+                        <table style={{ width: '100%', marginBottom: 8 }}>
                             <tbody>
                                 <tr>
                                     <td><Card.Title className="my-auto" style={{ fontSize: 18, color: 'white' }}>{projectTitle}</Card.Title></td>
@@ -47,7 +44,7 @@ const ProjectCard: React.FC<ProjectCardProps>
                                 </tr>
                             </tbody>
                         </table>
-                        <Card.Subtitle style={{ color: 'white', fontSize: 13 }} className="mt-1 text-muted">{projectSubTitle}</Card.Subtitle>
+                        <Card.Subtitle style={{ color: 'white', fontSize: 12, fontWeight: 400, opacity: .7 }} className="mt-1">{projectSubTitle}</Card.Subtitle>
                         {/* introduction */}
                         <Card.Text style={{ fontSize: 15, color: 'white', lineHeight: 1.7 }} className="mt-3 mb-4">{projectDescription}</Card.Text>
                         {/* tech stack */}
