@@ -11,7 +11,7 @@ import Styles from './Footer.module.css';
 export default function Footer() {
     return (
         <>
-            <footer className={`${Styles.cutom_footer} bg-none`}>
+            <footer className={`${Styles.custom_footer} bg-none`}>
                 <Row>
                     <Col className={Styles.footer_logo} sm={6}>vihanpereraux</Col>
                     <Col className={Styles.left_column} sm={6}>
