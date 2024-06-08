@@ -1,43 +1,25 @@
-.get_resume {
-    margin-top: 40px;
-    width: 180px;
-    height: 55px;
-    border-radius: 12px;
-    background: rgb(17, 17, 17);
-    border: none;
-}
-
 .heading {
     color: white;
-    width: 75%;
-    line-height: 1.3;
-    font-weight: 400;
+    text-align: center;
 }
 
-.project_card {
+.brief {
+    line-height: 1.6;
+    margin-top: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+    color: white;
+}
+
+.project_card_wrapper {
+    margin-top: 20px;
     background-color: #191919;
-    width: 100%;
-    border-radius: 12px;
-    border: 1px solid #4b4b4b5c;
 }
 
-.card_1 {
-    width: 85%;
-    position: absolute;
-    left: 40px;
-    bottom: 20px;
-}
-
-.card_2 {
-    width: 95%;
-}
-
-.card_3 {
-    width: 90%;
-}
-
-.second_row {
-    margin-top: 40px;
+.project_title {
+    font-size: 17px;
+    color: white;
 }
 
 .done_icon {
@@ -49,7 +31,6 @@
     transform: translate(-50%, -50%);
     animation: doneBlinkAnimation 1.5s linear infinite;
 }
-
 
 @keyframes doneBlinkAnimation {
     0% {
@@ -89,14 +70,32 @@
     }
 }
 
+.project_subtitle {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: .7;
+    margin-top: 10px;
+}
+
+.project_image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.project_description {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
 .tech_stack {
     display: flex;
 }
 
-.tech_stack img:first-child {
-    margin-left: 0px;
-}
-
 .tech_stack img {
-    margin-left: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
