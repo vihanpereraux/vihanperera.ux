@@ -1,14 +1,13 @@
 "use client"
 
 import Image from "next/image";
-import GithubCommitGraph from "@/public/home/github-commit-img/commit-graph.png";
 
-// bootstrap comps
+// bootstrap components
 import Styles from './Home.module.css';
-import { Card, Button, Col, Row } from "react-bootstrap";
+import { Button, Col, Row } from "react-bootstrap";
 
 import HomeCards from "./components/home/banner/home-cards";
-
+import GitCommitGraph from "./components/home/graph-area/git-commit-graph";
 
 export default function Home() {
   return (
@@ -29,13 +28,12 @@ export default function Home() {
         </Row>
       </header>
 
-      <div>
-        <Image
-          className={Styles.commit_graph}
-          src={GithubCommitGraph}
-          alt="s">
-        </Image>
-      </div>
+      {/* github commit graph preview */}
+      <Row>
+        <Col sm={12} md={12} lg={12}>
+          <GitCommitGraph />
+        </Col>
+      </Row>
 
       {/* dev intro */}
 
