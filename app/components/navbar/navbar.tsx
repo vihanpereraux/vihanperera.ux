@@ -15,10 +15,11 @@ export default function TopNavbar() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className={`${Styles.link_wrapper} ms-auto`}>
-                    <Link className={Styles.route_link} href="/dev">Development</Link>
-                    <Link className={Styles.route_link} href="/design">UX Design</Link>
-                    <Link className={Styles.route_link} href="/research">Research</Link>
-                    <Link className={Styles.route_link} href="/articles">Articles</Link>
+                    <Link className={Styles.route_link} href="/dev">[ Dev ]</Link>
+                    <Link className={Styles.route_link} href="/design">[ UX / UI ]</Link>
+                    <Link className={Styles.route_link} href="/research">[Research ]</Link>
+                    <Link className={Styles.route_link} href="/articles">[ Articles ]</Link>
+                    <Link className={Styles.route_link} href="/articles">[ Experience ]</Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
