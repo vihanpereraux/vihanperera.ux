@@ -21,14 +21,14 @@
 
 body {
   background: black !important;
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+}
 
+body::-webkit-scrollbar {
+  width: 6px;
+  background-color: black;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(52, 52, 52);
 }
 
 @layer utilities {
